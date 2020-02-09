@@ -7,21 +7,23 @@
   </head>
   <body>
     <script>
-        // todos (undefined, 50%) (undefined)
-      var todos = ["apa", "cafea", "paine"];
-        // todos (array with 3 items, 80%) (array with 3 items)
-      
+      var todos = [
+        { todoText: "apa", completed: false },
+        { todoText: "cafea", completed: false },
+        { todoText: "paine", completed: false }
+      ];
+
       function display() {
         console.log("My list:", todos);
       }
 
-      function add(todo) {
-        todos.push(todo);
+      function add(initialTodoText) {
+        todos.push({ todoText: initialTodoText, completed: false}) 
         display();
       }
 
-      function edit(position, newValue) {
-        todos[position] = newValue;
+      function edit(position, updatedTodoText) {
+        todos[position].todoText = updatedTodoText;
         display();
       }
 
