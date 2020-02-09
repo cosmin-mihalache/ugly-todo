@@ -10,22 +10,24 @@
         // todos (undefined, 50%) (undefined)
       var todos = ["apa", "cafea", "paine"];
         // todos (array with 3 items, 80%) (array with 3 items)
-      console.log(todos);
-        // (an array will be logged in the console, 90%) (an array will be logged in the console)
+      
+      function display() {
+        console.log("My list:", todos);
+      }
 
       function add(todo) {
         todos.push(todo);
-        console.log(todos);
+        display();
       }
 
       function edit(position, newValue) {
         todos[position] = newValue;
-        console.log(todos);
+        display();
       }
 
       function remove(position) {
         todos.splice(position, 1);
-        console.log(todos);
+        display();
       }
     </script>
   </body>

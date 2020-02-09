@@ -1,5 +1,5 @@
 Version 2
-
+[x] It shoud have a function to display todos
 [x] It shoud have a function to add a todo
 [x] It shoud have a function to edit a todo
 [x] It shoud have a function to remove a todo
