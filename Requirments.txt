@@ -1,4 +1,9 @@
+Version 5
+
+[x] displayTodos should show the todoText and completed properties.
+
 Version 4
+
 [x]  It should have a function to toggle a todo.
 
 Version 3

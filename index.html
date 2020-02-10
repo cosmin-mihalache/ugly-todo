@@ -13,23 +13,25 @@
         { todoText: "paine", completed: false }
       ];
 
-      function display() {
-        console.log("My list:", todos);
+      function displayTodos() {
+        for (var i = 0; i < todos.length; i++) {
+          console.log(todos[i]);
+        }
       }
 
       function add(initialTodoText) {
         todos.push({ todoText: initialTodoText, completed: false });
-        display();
+        displayTodos();
       }
 
       function edit(position, updatedTodoText) {
         todos[position].todoText = updatedTodoText;
-        display();
+        displayTodos();
       }
 
       function remove(position) {
         todos.splice(position, 1);
-        display();
+        displayTodos();
       }
 
       function toggle(position) {
@@ -38,7 +40,7 @@
         } else {
           todos[position].completed = false;
         }
-        display();
+        displayTodos();
       }
     </script>
   </body>
