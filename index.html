@@ -18,7 +18,7 @@
       }
 
       function add(initialTodoText) {
-        todos.push({ todoText: initialTodoText, completed: false}) 
+        todos.push({ todoText: initialTodoText, completed: false });
         display();
       }
 
@@ -29,6 +29,15 @@
 
       function remove(position) {
         todos.splice(position, 1);
+        display();
+      }
+
+      function toggle(position) {
+        if (todos[position].completed === false) {
+          todos[position].completed = true;
+        } else {
+          todos[position].completed = false;
+        }
         display();
       }
     </script>
