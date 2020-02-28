@@ -1,12 +1,19 @@
+Version 3
+
+[x]  We shoud initialize the todos variable with objects.
+[x]  The add function should add objects.
+[x]  The edit function should edit objects.
+
 Version 2
-[x] It shoud have a function to display todos
-[x] It shoud have a function to add a todo
-[x] It shoud have a function to edit a todo
-[x] It shoud have a function to remove a todo
+
+[x] It shoud have a function to display todos.
+[x] It shoud have a function to add a todo.
+[x] It shoud have a function to edit a todo.
+[x] It shoud have a function to remove a todo.
 
 Version 1
 
-[x] It shoud have a place to store todos
-[x] It shoud have a way to add todos
-[x] It shoud have a way to edit a todo
-[x] It shoud have a way to remove a todo
+[x] It shoud have a place to store todos.
+[x] It shoud have a way to add todos.
+[x] It shoud have a way to edit a todo.
+[x] It shoud have a way to remove a todo.
