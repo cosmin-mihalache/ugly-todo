@@ -7,11 +7,28 @@
   </head>
   <body>
     <script>
+        // todos (undefined, 50%) (undefined)
       var todos = ["apa", "cafea", "paine"];
-      console.log(todos);
-      todos.push("ceai");
-      todos[0] = "apa 2L";
-      todos.splice(1, 1);
+        // todos (array with 3 items, 80%) (array with 3 items)
+      
+      function display() {
+        console.log("My list:", todos);
+      }
+
+      function add(todo) {
+        todos.push(todo);
+        display();
+      }
+
+      function edit(position, newValue) {
+        todos[position] = newValue;
+        display();
+      }
+
+      function remove(position) {
+        todos.splice(position, 1);
+        display();
+      }
     </script>
   </body>
 </html>

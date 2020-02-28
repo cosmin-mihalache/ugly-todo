@@ -1,0 +1,7 @@
+Step over to the next line that's about run.
+
+Attacking delusion (tracking expectation versus reality).
+Debugger concepts - setting breakpoints
+                  - step over 
+                  - step into
+                  - trigerring breakpoints from the console
