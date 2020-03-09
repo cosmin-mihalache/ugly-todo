@@ -1,3 +1,10 @@
+Version 8
+
+[x] There shoud be a working button for adding a todo.
+[x] There shoud be a working button for editing a todo.
+[x] There shoud be a working button for removing a todo.
+[x] There shoud be a working button for toggling a todo.
+
 Version 7
 
 [x] It should have a displayTodos button.
@@ -19,13 +26,13 @@ Version 5
 
 Version 4
 
-[x]  It should have a function to toggle a todo.
+[x] It should have a function to toggle a todo.
 
 Version 3
 
-[x]  We shoud initialize the todos variable with objects.
-[x]  The add function should add objects.
-[x]  The edit function should edit objects.
+[x] We shoud initialize the todos variable with objects.
+[x] The add function should add objects.
+[x] The edit function should edit objects.
 
 Version 2
 

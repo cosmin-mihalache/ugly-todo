@@ -8,11 +8,24 @@
   <body>
     <button id="display-todos-button">displayTodos</button>
     <button id="toggle-all-button">Toggle all</button>
+
+    <button id="add-button">Add</button>
+    <input id="add-input" />
+
+    <button id="edit-button">Edit</button>
+    <input id="edit-position-input" />
+    <input id="edit-text-input" />
+
+    <button id="remove-button">Remove</button>
+    <input id="remove-input" />
+
+    <button id="toggle-button">Toggle</button>
+    <input id="toggle-input" />
     <script>
       var todos = [
-        { todoText: "apa", completed: false },
-        { todoText: "cafea", completed: false },
-        { todoText: "paine", completed: false }
+        { todoText: 'apa', completed: false },
+        { todoText: 'cafea', completed: false },
+        { todoText: 'paine', completed: false },
       ];
 
       function displayTodos() {
@@ -21,27 +34,37 @@
         }
       }
 
-      function add(initialTodoText) {
+      function add() {
+        var initialTodoText = addInput.value;
         todos.push({ todoText: initialTodoText, completed: false });
+        addInput.value = '';
         displayTodos();
       }
 
-      function edit(position, updatedTodoText) {
+      function edit() {
+        var position = editPositionInput.value;
+        var updatedTodoText = editTextInput.value;
         todos[position].todoText = updatedTodoText;
+        editPositionInput.value = '';
+        editTextInput.value = '';
         displayTodos();
       }
 
-      function remove(position) {
+      function remove() {
+        var position = removeTodo.value;
         todos.splice(position, 1);
+        removeTodo.value = '';
         displayTodos();
       }
 
-      function toggle(position) {
+      function toggle() {
+        var position = toggleInput.value;
         if (todos[position].completed === false) {
           todos[position].completed = true;
         } else {
           todos[position].completed = false;
         }
+        toggleInput.value = '';
         displayTodos();
       }
 
@@ -67,11 +90,28 @@
         displayTodos();
       }
 
-      var displayTodosButton = document.getElementById("display-todos-button");
-      displayTodosButton.addEventListener("click", displayTodos);
+      var displayTodosButton = document.getElementById('display-todos-button');
+      displayTodosButton.addEventListener('click', displayTodos);
 
-      var toggleAllButton = document.getElementById("toggle-all-button");
-      toggleAllButton.addEventListener("click", toggleAll);
+      var toggleAllButton = document.getElementById('toggle-all-button');
+      toggleAllButton.addEventListener('click', toggleAll);
+
+      var addButton = document.getElementById('add-button');
+      var addInput = document.getElementById('add-input');
+      addButton.addEventListener('click', add);
+
+      var editButton = document.getElementById('edit-button');
+      var editPositionInput = document.getElementById('edit-position-input');
+      var editTextInput = document.getElementById('edit-text-input');
+      editButton.addEventListener('click', edit);
+
+      var removeButton = document.getElementById('remove-button');
+      var removeTodo = document.getElementById('remove-input');
+      removeButton.addEventListener('click', remove);
+
+      var toggleButton = document.getElementById('toggle-button');
+      var toggleInput = document.getElementById('toggle-input');
+      toggleButton.addEventListener('click', toggle);
     </script>
   </body>
 </html>
